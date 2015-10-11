@@ -1,7 +1,7 @@
 #include "LeapMotionPrivatePCH.h"
 #include "LeapCircleGesture.h"
 #include "LeapGesture.h"
-#include "Math.h"
+#include "math.h"
 
 class PrivateCircleGesture
 {

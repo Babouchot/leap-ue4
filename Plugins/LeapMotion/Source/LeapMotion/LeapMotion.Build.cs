@@ -94,6 +94,12 @@ namespace UnrealBuildTool.Rules
                 PublicAdditionalLibraries.Add(Path.Combine(BinariesPath, PlatformString, "libLeap.dylib"));
 
             }
+            else if (Target.Platform == UnrealTargetPlatform.Linux){
+
+                isLibrarySupported = true;
+                string PlatformString = "Linux";
+                PublicAdditionalLibraries.Add(Path.Combine(LibraryPath, PlatformString, "libLeap.so"));
+            }
 
             return isLibrarySupported;
         }
